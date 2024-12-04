@@ -4,13 +4,13 @@ import FoodCard from './FoodCard'
 
 function FoodItems() {
   return (
-    <div>
+    <div className='flex flex-wrap gap-10 justify-center lg:justify-start mx-6 my-10'>
       {
-        FoodData.map((item)=>{
-          return <FoodCard key={item.id} id={item.id} name={item.name} desc={item.desc} rating={item.rating} price={item.price} img={item.img}/> 
+        FoodData.map((item) => {
+          return <FoodCard key={item.id} id={item.id} name={item.name} desc={item.desc} rating={item.rating} price={item.price} img={item.img} />
         })
       }
-        
+
     </div>
   )
 }
